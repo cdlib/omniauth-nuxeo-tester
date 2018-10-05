@@ -1,0 +1,6 @@
+development:
+  providers:
+    nuxeo:
+      site: https://nuxeo.my_site.org
+      client_id: ABCDEFG
+      client_secret: 1234567890

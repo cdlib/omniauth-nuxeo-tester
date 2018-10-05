@@ -1,0 +1,10 @@
+<div>
+  <h1>Hello World</h1>
+
+  <h2>Omniauth Config</h2>
+  <p><%= Rails.configuration.omniauth.inspect %></p>
+
+  <form method="POST" action="auth/nuxeo/callback">
+    <input type="submit" value="Login via Nuxeo" />
+  </form>
+</div>
