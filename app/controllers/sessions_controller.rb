@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class SessionsController < ApplicationController
+class SessionsController < s
 
   def create
     session[:omniauth] = request.env['omniauth.auth']

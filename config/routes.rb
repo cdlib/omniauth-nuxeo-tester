@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root :to => 'home#index'
 
+  get 'login', to: redirect('/auth/nuxeo'), as: 'login'
+
   # Omniauth callback
   get '/auth/:provider/callback', to: 'sessions#create'
 end

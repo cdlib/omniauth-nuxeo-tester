@@ -4,7 +4,7 @@
   <h2>Omniauth Config</h2>
   <p><%= Rails.configuration.omniauth.inspect %></p>
 
-  <form method="POST" action="auth/nuxeo/callback">
+  <form method="GET" action="login/">
     <input type="submit" value="Login via Nuxeo" />
   </form>
 </div>
