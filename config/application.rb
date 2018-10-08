@@ -15,6 +15,8 @@ module NuxeoOauth2
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
+    Logger.new(STDOUT) if Rails.env == 'development'
+
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
@@ -37,8 +39,6 @@ module NuxeoOauth2
                        client_id: nuxeo_config[:client_id],
                        client_secret: nuxeo_config[:client_secret]
       end
-
-      OmniauthNuxeo.logger = Rails.logger
     end
 
   end
